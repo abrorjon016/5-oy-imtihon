@@ -1,1 +1,14 @@
- 
+const logoUrl = document.getElementById("logo-url");
+const companyName = document.getElementById("company-name");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
+const element = document.getElementById("myId");
