@@ -1,0 +1,63 @@
+#Photosnap-infos {
+  margin-right: 300px;
+}
+
+#myhome {
+  margin-right: 283px;
+}
+
+#types-dew {
+  margin-left: 46px;
+}
+
+#types-dew2 {
+  margin-left: 124px;
+}
+
+#shortly-infos {
+  margin-right: 254px;
+}
+
+#shortly-infos h5 {
+  white-space: nowrap;
+}
+
+#insure-infos {
+  margin-right: 218px;
+}
+
+#eyecma-infos {
+  margin-left: -5px;
+}
+
+#eyecma-infos h5 {
+  white-space: nowrap;
+}
+
+#Loop-infos {
+  margin-right: 184px;
+}
+
+#Loop-infos h5 {
+  white-space: nowrap;
+}
+
+#air-infos {
+  margin-right: 245px;
+}
+
+#air-infos h5 {
+  white-space: nowrap;
+}
+
+#delete-card {
+  background-color: #5ca5a5;
+  color: #effafa;
+  transition: 0.3s;
+}
+#delete-card:hover {
+  background-color: #effafa;
+  color: #5ca5a5;
+  transition: 0.3s;
+  outline: 2px solid #5ca5a5ed;
+}

@@ -1,0 +1,235 @@
+.top-window {
+  width: 100%;
+}
+/* tepadagi yashil zona */
+
+/* miyyani ezuvchi */
+.brain-killer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  font-family: Roboto;
+  margin: 20px;
+}
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-container input[type="text"],
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.checkbox-group label {
+  font-size: 14px;
+}
+
+.select-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.skills-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+button[type="submit"]:hover {
+  background-color: #f3f3f3;
+  outline: 2px solid #333;
+  color: #333;
+  transition: 1s;
+}
+/* miyyani ezuvchi */
+
+/* cards */
+.cards {
+  display: flex;
+  padding: 0px;
+  gap: 24px;
+  flex-direction: column;
+  margin: 10px 165px 120px 165px;
+}
+
+/* ---------------------------------- */
+/* Photosnap */
+.photosnap {
+  display: flex;
+  align-items: center;
+  width: 1110px;
+  height: 152px;
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px -5px #0d718226;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 88px;
+  height: 88px;
+  margin: 32px 24px 32px 40px;
+}
+
+.Photosnap-infos {
+  margin: 32px 206px 31px 0px;
+  padding: 0px;
+}
+
+.quality {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.quality :nth-child(1) {
+  font-family: League Spartan;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16.56px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #5ca5a5;
+}
+
+.quality :nth-child(2) {
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.10769230872392654px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #5ca5a5;
+  color: #ffffff;
+  padding: 7px 8px 3px 8px;
+  border: none;
+  border-radius: 12px;
+  margin: 0px 8px 0px 15px;
+}
+
+.quality :nth-child(3) {
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.10769230872392654px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #2b3939;
+  color: #ffffff;
+  padding: 7px 8px 3px 8px;
+  border: none;
+  border-radius: 12px;
+  margin: 0px;
+}
+/* quality */
+
+.nickname-dew {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2b3939;
+  margin: 0px;
+  white-space: nowrap;
+}
+/* nickname-dew */
+
+.time-Photosnap {
+  font-family: League Spartan;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.13846154510974884px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #7c8f8f;
+}
+/* time-Photosnap  */
+
+.types-dew {
+  margin: 60px 30px 60px 0px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.types-dew button {
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.1230769231915474px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #effafa;
+  border: none;
+  color: #5ca5a5;
+  padding: 5px 10px 3px 9px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+/* types-dew */
+/* Photosnap */
+/* ---------------------------------- */
