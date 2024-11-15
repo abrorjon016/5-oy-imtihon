@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,10 +22,10 @@
     <title>5-oy imtihon</title>
   </head>
   <body>
-    <div class="top-window">
-      <img src="./image/Combined Shape.svg" alt="#" />
-    </div>
     <header>
+      <div class="top-window">
+        <img src="./image/Combined Shape.svg" alt="#" />
+      </div>
       <div class="brain-killer">
         <div class="form-container">
           <h2>Vakansiya ma'lumotlarini kiriting</h2>
@@ -78,7 +78,7 @@
             </div>
             <div class="form-group">
               <label for="type">Ish turi</label>
-              <select id="type">
+              <select id="type-work">
                 <option>Tanlang</option>
                 <option>Full time</option>
                 <option>Part time</option>
@@ -99,254 +99,118 @@
 
           <label>Ko'nikmalar</label>
           <div class="skills-group">
-            <label><input type="checkbox" /> Fullstack</label>
-            <label><input type="checkbox" /> Midweight</label>
-            <label><input type="checkbox" /> Python</label>
-            <label><input type="checkbox" /> React</label>
+            <label><input id="fullstack" type="checkbox" /> Fullstack</label>
+            <label><input id="midweight" type="checkbox" /> Midweight</label>
+            <label><input id="python" type="checkbox" /> Python</label>
+            <label><input id="eact" type="checkbox" /> React</label>
           </div>
 
-          <button type="submit">Saqlash</button>
+          <button type="submit" id="saqlash">Saqlash</button>
         </div>
       </div>
     </header>
-    <main>
-      <!-- <div class="cards">
-        <div class="photosnap">
-          <img src="./image/photosnap.svg" alt="#" class="logo" />
-          <div class="Photosnap-infos">
-            <div class="quality">
-              <h5>Photosnap</h5>
-              <h5>NEW!</h5>
-              <h5>FEATURED</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Senior Frontend Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>1d ago • Full Time • USA only</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Frontend</button>
-            <button>Senior</button>
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
- 
-        <div class="photosnap">
-          <img src="./image/manage.svg" alt="#" class="logo" />
-          <div id="Photosnap-infos" class="Photosnap-infos">
-            <div class="quality">
-              <h5>Manage</h5>
-              <h5>NEW!</h5>
-              <h5>FEATURED</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Fullstack Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>1d ago • Part Time • Remote</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Fullstack</button>
-            <button>Midweight</button>
-            <button>Python</button>
-            <button>React</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
+
+    <div id="cards" class="cards">
+      <div class="cards">
         
-        <div class="photosnap">
-          <img src="./image/account.svg" alt="#" class="logo" />
-          <div class="Photosnap-infos">
-            <div class="quality">
-              <h5>Account</h5>
-              <h5>NEW!</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Junior Frontend Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>2d ago • Part Time • USA only</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Frontend</button>
-            <button>Senior</button>
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-        
-        <div class="photosnap">
-          <img src="./image/myhome.svg" alt="#" class="logo" />
-          <div id="myhome" class="Photosnap-infos">
-            <div class="quality">
-              <h5>MyHome</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Junior Frontend Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>5d ago • Contract • USA only</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Frontend</button>
-            <button>Junior</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-        
-        <div class="photosnap">
-          <img src="./image/loopstudios.svg" alt="#" class="logo" />
-          <div id="Loop-infos" class="Photosnap-infos">
-            <div class="quality">
-              <h5>Loop Studios</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Software Engineer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>1w ago • Full Time • Worldwide</h5>
-            </div>
-          </div>
-          <div id="types-dew" class="types-dew">
-            <button>Fullstack</button>
-            <button>Midweight</button>
-            <button>JavaScript</button>
-            <button>Sass</button>
-            <button>Ruby</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-        
-        <div class="photosnap">
-          <img src="./image/feclat.svg" alt="#" class="logo" />
-          <div class="Photosnap-infos">
-            <div class="quality">
-              <h5>FaceIt</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Junior Backend Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>2w ago • Full Time • UK only</h5>
-            </div>
-          </div>
-          <div id="types-dew2" class="types-dew">
-            <button>Backend</button>
-            <button>Junior</button>
-            <button>Ruby</button>
-            <button>RoR</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-       
-        <div class="photosnap">
-          <img src="./image/shortly.svg" alt="#" class="logo" />
-          <div id="shortly-infos" class="Photosnap-infos">
-            <div class="quality">
-              <h5>Shortly</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Junior Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>2w ago • Full Time • Worldwide</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Frontend</button>
-            <button>Junior</button>
-            <button>HTML</button>
-            <button>Sass</button>
-            <button>JavaScript</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-      
-        <div class="photosnap">
-          <img src="./image/insure.svg" alt="#" class="logo" />
-          <div id="insure-infos" class="Photosnap-infos">
-            <div class="quality">
-              <h5>Insure</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Junior Frontend Developer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>2w ago • Full Time • USA only</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Frontend</button>
-            <button>Junior</button>
-            <button>Vue</button>
-            <button>JavaScript</button>
-            <button>Sass</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-    
-        <div class="photosnap">
-          <img src="./image/eyecma.svg" alt="#" class="logo" />
-          <div id="eyecma-infos" class="Photosnap-infos">
-            <div class="quality">
-              <h5>Eyecam Co.</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Full Stack Engineer</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>3w ago • Full Time • Worldwide</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Fullstack</button>
-            <button>Midweight</button>
-            <button>JavaScript</button>
-            <button>Django</button>
-            <button>Python</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-        
-        <div class="photosnap">
-          <img src="./image/air.svg" alt="#" class="logo" />
-          <div id="air-infos" class="Photosnap-infos">
-            <div class="quality">
-              <h5>The Air Filter Company</h5>
-            </div>
-            <div class="nickname-dew">
-              <h4>Front-end Dev</h4>
-            </div>
-            <div class="time-Photosnap">
-              <h5>1mo ago • Part Time • Worldwide</h5>
-            </div>
-          </div>
-          <div class="types-dew">
-            <button>Frontend</button>
-            <button>Junior</button>
-            <button>React</button>
-            <button>Sass</button>
-            <button>JavaScript</button>
-            <button id="delete-card">delete</button>
-          </div>
-        </div>
-      
-      </div> -->
-    </main>
-    <script src="./js/app.js"></script>
+      </div>
+    </div>
+
     <script src="./js/index.js"></script>
-    <script src="./js/extra.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/extra.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./image/odam.svg" />
+    <title>5-oy imtihon</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-window">
+        <img src="./image/Combined Shape.svg" alt="#" />
+      </div>
+      <div class="form-container">
+        <h2>Vakansiya ma'lumotlarini kiriting</h2>
+        <input
+          type="text"
+          id="logo-url"
+          placeholder="Logotip URL manzilini kiriting"
+        />
+        <input type="text" id="company-name" placeholder="Kompaniya nomi" />
+
+        <div class="checkbox-group">
+          <label><input type="checkbox" id="newElem" /> Yangi</label>
+          <label><input type="checkbox" id="featuredElem" /> Featured</label>
+        </div>
+
+        <input type="text" id="position" placeholder="Lavozim" />
+
+        <select id="time">
+          <option>Tanlang</option>
+          <option>1day ago</option>
+          <option>2day ago</option>
+          <option>3day ago</option>
+          <option>4day ago</option>
+          <option>5day ago</option>
+          <option>6day ago</option>
+          <option>7day ago</option>
+          <option>1w ago</option>
+          <option>2w ago</option>
+          <option>3w ago</option>
+          <option>4w ago</option>
+          <option>5w ago</option>
+          <option>6w ago</option>
+          <option>7w ago</option>
+          <option>1mo ago</option>
+          <option>2mo ago</option>
+          <option>3mo ago</option>
+          <option>4mo ago</option>
+          <option>5mo ago</option>
+          <option>6mo ago</option>
+          <option>7mo ago</option>
+        </select>
+
+        <select id="type-work">
+          <option>Tanlang</option>
+          <option>Full time</option>
+          <option>Part time</option>
+          <option>Contract</option>
+        </select>
+
+        <select id="location">
+          <option>Tanlang</option>
+          <option>USA only</option>
+          <option>Remote</option>
+          <option>Worldwide</option>
+          <option>UK only</option>
+        </select>
+
+        <div class="skills-group">
+          <label><input type="checkbox" id="frontend" /> Frontend</label>
+          <label><input type="checkbox" id="senior" /> Senior</label>
+          <label><input type="checkbox" id="html" /> HTML</label>
+          <label><input type="checkbox" id="css" /> CSS</label>
+          <label><input type="checkbox" id="javascript" /> JavaScript</label>
+        </div>
+
+        <button id="saqlash">Saqlash</button>
+      </div>
+    </header>
+
+    <div id="cards" class="cards"></div>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
